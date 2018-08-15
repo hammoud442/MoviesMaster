@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class Login extends AppCompatActivity {
 
@@ -29,6 +30,7 @@ public class Login extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(mContext,Home.class));
+                Toast.makeText(mContext, "Home Layout", Toast.LENGTH_SHORT).show();
             }
         });
 
