@@ -23,13 +23,16 @@
             android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen" />
         <activity
             android:name=".SignUp"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen" />
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen" >
+
+        </activity>
         <activity
             android:name=".Home"
             android:label="@string/title_activity_home"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".ProfileMoviesActivity" />
-        <activity android:name=".MoviesList"></activity>
+        <activity android:name=".MoviesList" />
+        <activity android:name=".interets_activity"></activity>
     </application>
 
 </manifest>

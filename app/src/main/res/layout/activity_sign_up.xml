@@ -22,45 +22,48 @@
         android:id="@+id/liner">
 
         <EditText
+            android:id="@+id/user_name_id"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginEnd="24dp"
+            android:layout_marginStart="24dp"
+            android:background="@drawable/button_border"
             android:hint="Full Name"
             android:paddingBottom="7dp"
-            android:paddingTop="7dp"
-            android:textColorHint="@color/colorPrimary"
-            android:textColor="@color/colorPrimary"
             android:paddingStart="15dp"
-            android:background="@drawable/button_border"
-            android:layout_marginStart="24dp"
-            android:layout_marginEnd="24dp"/>
+            android:paddingTop="7dp"
+            android:textColor="@color/colorPrimary"
+            android:textColorHint="@color/colorPrimary" />
 
         <EditText
+            android:id="@+id/email_sign_up_id"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginEnd="24dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/button_border"
             android:hint="Email"
             android:paddingBottom="7dp"
-            android:paddingTop="7dp"
-            android:textColorHint="@color/colorPrimary"
-            android:textColor="@color/colorPrimary"
             android:paddingStart="15dp"
-            android:background="@drawable/button_border"
-            android:layout_marginStart="24dp"
-            android:layout_marginEnd="24dp"
-            android:layout_marginTop="24dp"/>
+            android:paddingTop="7dp"
+            android:textColor="@color/colorPrimary"
+            android:textColorHint="@color/colorPrimary" />
 
         <EditText
+            android:id="@+id/password_sign_up_id"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginEnd="24dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/button_border"
             android:hint="Password"
             android:paddingBottom="7dp"
-            android:paddingTop="7dp"
-            android:textColorHint="@color/colorPrimary"
-            android:textColor="@color/colorPrimary"
             android:paddingStart="15dp"
-            android:background="@drawable/button_border"
-            android:layout_marginStart="24dp"
-            android:layout_marginEnd="24dp"
-            android:layout_marginTop="24dp"/>
+            android:paddingTop="7dp"
+            android:textColor="@color/colorPrimary"
+            android:textColorHint="@color/colorPrimary" />
     </LinearLayout>
 
     <TextView
@@ -79,15 +82,16 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:orientation="horizontal">
+
         <Button
+            android:id="@+id/continue_id"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/colorPrimary"
-            android:text="@string/Continue"
-            android:id="@+id/login"
-            android:textColor="@android:color/white"
+            android:drawableEnd="@drawable/return_arrow"
             android:paddingEnd="24dp"
-            android:drawableEnd="@drawable/return_arrow"/>
+            android:text="@string/Continue"
+            android:textColor="@android:color/white" />
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".interets_activity">
+
+    <ImageView
+        android:id="@+id/logoSignUp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/group_1"
+        android:foregroundGravity="center"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="110dp"/>
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="110dp"
+        android:layout_marginTop="180dp"
+        android:text="@string/create_an_account"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat"
+        android:textColor="@color/colorPrimary"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="230dp"
+        android:backgroundTint="@color/colorPrimary"
+        >
+
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/button_border"
+            android:hint="Country"
+            android:textColor="@color/colorPrimary"
+            android:textColorHighlight="@color/colorPrimary" />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="280dp"
+        android:background="@drawable/button_border">
+
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Age"
+            android:textColor="@color/colorPrimary"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="340dp"
+        android:text="@string/interest"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat"
+        android:textColor="@color/colorPrimary"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="530dp"
+        android:background="@color/colorPrimary"
+        android:text="@string/finish"
+        android:textColor="@android:color/white"/>
+
+    <android.support.v7.widget.AppCompatCheckBox
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:background="@drawable/button_border"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="380dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Drama"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="380dp"
+        android:textStyle="bold"
+
+
+        />
+    <android.support.v7.widget.AppCompatCheckBox
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:background="@drawable/button_border"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="380dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Action"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginStart="180dp"
+        android:layout_marginTop="380dp"
+        android:textStyle="bold"
+
+
+        />
+    <android.support.v7.widget.AppCompatCheckBox
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:background="@drawable/button_border"
+        android:layout_marginStart="250dp"
+        android:layout_marginTop="380dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Comedy"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginStart="285dp"
+        android:layout_marginTop="380dp"
+        android:textStyle="bold"
+
+        />
+    <android.support.v7.widget.AppCompatCheckBox
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:background="@drawable/button_border"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="430dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Horror"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="430dp"
+        android:textStyle="bold"
+
+        />
+    <android.support.v7.widget.AppCompatCheckBox
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:background="@drawable/button_border"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="430dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Action"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginStart="180dp"
+        android:layout_marginTop="430dp"
+        android:textStyle="bold"
+
+
+        />
+    <android.support.v7.widget.AppCompatCheckBox
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:background="@drawable/button_border"
+        android:layout_marginStart="250dp"
+        android:layout_marginTop="430dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Romance"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginStart="285dp"
+        android:layout_marginTop="430dp"
+        android:textStyle="bold"
+
+        />
+</RelativeLayout>
