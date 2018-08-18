@@ -1,5 +1,6 @@
 package hammoud.sami.mhmd.moviesmaster;
 
+
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
@@ -48,6 +49,7 @@ public class interets_activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_interets_activity);
+
 
         mButtonInterest = findViewById(R.id.finish_intersest_id);
         mCountery = findViewById(R.id.country_id);
