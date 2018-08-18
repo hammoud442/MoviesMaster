@@ -18,7 +18,7 @@
     <string name="interest"> Your Interests </string>
     <string name="finish"> Finish</string>
     <string name="Drama"> Drama</string>
-    <string name="Action"> Acrion</string>
+    <string name="Action"> Action</string>
     <string name="Comedy"> Comedy</string>
     <string name="Romance"> Romance</string>
     <string name="Horror"> Horror</string>
@@ -27,6 +27,7 @@
     <string name="password">Password</string>
     <string name="title_activity_home">Home</string>
     <string name="text">texttexttexttexttexttexttexttexttexttext</string>
+    <string name="family">Family</string>
 
 
 </resources>

@@ -27,12 +27,14 @@
             android:textColorHint="@color/colorPrimary"
             android:layout_marginStart="24dp"
             android:layout_marginEnd="24dp">
+
             <android.support.design.widget.TextInputEditText
+                android:id="@+id/email_sign_in_id"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/email"
-                android:drawableStart="@drawable/mail"
                 android:drawablePadding="10dp"
+                android:drawableStart="@drawable/mail"
+                android:hint="@string/email"
                 android:textColor="@color/colorPrimary"
                 android:theme="@style/EditTextTheme" />
         </android.support.design.widget.TextInputLayout>
@@ -45,14 +47,16 @@
             android:layout_marginStart="24dp"
             android:layout_marginEnd="24dp"
             android:textColorHint="@color/colorPrimary">
+
             <android.support.design.widget.TextInputEditText
+                android:id="@+id/password_sign_in_id"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/password"
                 android:drawablePadding="10dp"
                 android:drawableStart="@drawable/lock"
+                android:hint="@string/password"
                 android:textColor="@color/colorPrimary"
-                android:theme="@style/EditTextTheme"/>
+                android:theme="@style/EditTextTheme" />
         </android.support.design.widget.TextInputLayout>
 
     </LinearLayout>
@@ -69,11 +73,11 @@
         />
 
     <Button
+        android:id="@+id/login_id"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:background="@color/colorPrimary"
         android:text="@string/LogIn"
-        android:id="@+id/login"
-        android:textColor="@android:color/white"/>
+        android:textColor="@android:color/white" />
 </RelativeLayout>
