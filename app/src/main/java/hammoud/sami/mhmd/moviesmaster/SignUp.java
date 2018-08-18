@@ -17,6 +17,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
@@ -119,9 +120,6 @@ Continue.setOnClickListener(new View.OnClickListener() {
 
                     HashMap<String, String> user_info_map = new HashMap<>();
                     user_info_map.put("name",display_name );
-                    user_info_map.put("status", "Hi there, I Started using Let's Laundry app \n Say hi!");
-                    user_info_map.put("image", "default");
-                    user_info_map.put("thump_image", "default");
                     user_info_map.put("email", email);
                     user_info_map.put("password", password);
 
@@ -133,7 +131,7 @@ Continue.setOnClickListener(new View.OnClickListener() {
 
                                 progressDialog.dismiss();
                                 Toast.makeText(mContext, "Registration success", Toast.LENGTH_SHORT).show();
-                                Intent loggetIntent = new Intent(mContext, MainActivity.class);
+                                Intent loggetIntent = new Intent(mContext, interets_activity.class);
                                 loggetIntent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
 
                                 startActivity(loggetIntent);
@@ -156,6 +154,12 @@ Continue.setOnClickListener(new View.OnClickListener() {
                     Toast.makeText(mContext, "Some Error happend", Toast.LENGTH_SHORT).show();
                 }
             }
+        }).addOnFailureListener(new OnFailureListener() {
+            @Override
+            public void onFailure(@NonNull Exception e) {
+                Log.d(TAG, "onFailure: error msg is :"+e);
+            }
+
         });
 
 

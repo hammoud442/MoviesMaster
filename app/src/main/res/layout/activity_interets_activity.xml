@@ -24,153 +24,120 @@
         android:textAppearance="@style/Base.TextAppearance.AppCompat"
         android:textColor="@color/colorPrimary"
         android:textSize="15sp"
-        android:textStyle="bold" />
-    <android.support.design.widget.TextInputLayout
-        android:layout_width="250dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="230dp"
-        android:backgroundTint="@color/colorPrimary"
-        >
+        android:textStyle="bold"
+        android:id="@+id/creat"/>
 
-        <android.support.design.widget.TextInputEditText
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@drawable/button_border"
-            android:hint="Country"
-            android:textColor="@color/colorPrimary"
-            android:textColorHighlight="@color/colorPrimary" />
-    </android.support.design.widget.TextInputLayout>
-    <android.support.design.widget.TextInputLayout
-        android:layout_width="250dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="280dp"
-        android:background="@drawable/button_border">
+    <EditText
+        android:id="@+id/country_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginStart="24dp"
+        android:background="@drawable/button_border"
+        android:hint="Country"
+        android:layout_marginTop="24dp"
+        android:paddingBottom="7dp"
+        android:paddingStart="15dp"
+        android:paddingTop="7dp"
+        android:textColor="@color/colorPrimary"
+        android:textColorHint="@color/colorPrimary"
+        android:layout_below="@+id/creat"/>
 
-        <android.support.design.widget.TextInputEditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Age"
-            android:textColor="@color/colorPrimary"/>
-    </android.support.design.widget.TextInputLayout>
+    <EditText
+        android:id="@+id/age_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginStart="24dp"
+        android:background="@drawable/button_border"
+        android:hint="Age"
+        android:paddingBottom="7dp"
+        android:paddingStart="15dp"
+        android:paddingTop="7dp"
+        android:textColor="@color/colorPrimary"
+        android:textColorHint="@color/colorPrimary"
+        android:layout_below="@+id/country_id"
+        android:layout_marginTop="24dp"/>
 
     <TextView
         android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="50dp"
+        android:layout_marginStart="24dp"
         android:layout_marginTop="340dp"
         android:text="@string/interest"
+        android:id="@+id/interset"
         android:textAppearance="@style/Base.TextAppearance.AppCompat"
         android:textColor="@color/colorPrimary"
         android:textSize="15sp"
         android:textStyle="bold" />
-    <Button
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginTop="530dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/interset"
+        android:gravity="center"
+        android:id="@+id/linear"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp">
+        <CheckBox android:id="@+id/checkbox_drama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Drama"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginEnd="24dp"
+            android:textStyle="bold" />
+        <CheckBox android:id="@+id/checkbox_action"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Action"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginEnd="24dp"
+            android:textStyle="bold" />
+        <CheckBox android:id="@+id/checkbox_comedy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Comedy"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginEnd="24dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp">
+        <CheckBox android:id="@+id/checkbox_horrer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Horror"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="24dp"
+            android:textStyle="bold" />
+        <CheckBox android:id="@+id/checkbox_family"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Family"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginEnd="24dp"
+            android:textStyle="bold" />
+        <CheckBox android:id="@+id/checkbox_romance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Romance"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginEnd="24dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/finish_intersest_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
         android:background="@color/colorPrimary"
-        android:text="@string/finish"
-        android:textColor="@android:color/white"/>
-
-    <android.support.v7.widget.AppCompatCheckBox
-        android:layout_width="25dp"
-        android:layout_height="25dp"
-        android:background="@drawable/button_border"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="380dp"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/Drama"
-        android:textColor="@color/colorPrimary"
-        android:layout_marginStart="80dp"
-        android:layout_marginTop="380dp"
-        android:textStyle="bold"
-
-
-        />
-    <android.support.v7.widget.AppCompatCheckBox
-        android:layout_width="25dp"
-        android:layout_height="25dp"
-        android:background="@drawable/button_border"
-        android:layout_marginStart="150dp"
-        android:layout_marginTop="380dp"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/Action"
-        android:textColor="@color/colorPrimary"
-        android:layout_marginStart="180dp"
-        android:layout_marginTop="380dp"
-        android:textStyle="bold"
-
-
-        />
-    <android.support.v7.widget.AppCompatCheckBox
-        android:layout_width="25dp"
-        android:layout_height="25dp"
-        android:background="@drawable/button_border"
-        android:layout_marginStart="250dp"
-        android:layout_marginTop="380dp"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/Comedy"
-        android:textColor="@color/colorPrimary"
-        android:layout_marginStart="285dp"
-        android:layout_marginTop="380dp"
-        android:textStyle="bold"
-
-        />
-    <android.support.v7.widget.AppCompatCheckBox
-        android:layout_width="25dp"
-        android:layout_height="25dp"
-        android:background="@drawable/button_border"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="430dp"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/Horror"
-        android:textColor="@color/colorPrimary"
-        android:layout_marginStart="80dp"
-        android:layout_marginTop="430dp"
-        android:textStyle="bold"
-
-        />
-    <android.support.v7.widget.AppCompatCheckBox
-        android:layout_width="25dp"
-        android:layout_height="25dp"
-        android:background="@drawable/button_border"
-        android:layout_marginStart="150dp"
-        android:layout_marginTop="430dp"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/Action"
-        android:textColor="@color/colorPrimary"
-        android:layout_marginStart="180dp"
-        android:layout_marginTop="430dp"
-        android:textStyle="bold"
-
-
-        />
-    <android.support.v7.widget.AppCompatCheckBox
-        android:layout_width="25dp"
-        android:layout_height="25dp"
-        android:background="@drawable/button_border"
-        android:layout_marginStart="250dp"
-        android:layout_marginTop="430dp"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/Romance"
-        android:textColor="@color/colorPrimary"
-        android:layout_marginStart="285dp"
-        android:layout_marginTop="430dp"
-        android:textStyle="bold"
-
-        />
+        android:text="Finish"
+        android:textColor="@android:color/white" />
 </RelativeLayout>
