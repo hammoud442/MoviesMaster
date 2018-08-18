@@ -39,6 +39,7 @@
         android:paddingBottom="7dp"
         android:paddingStart="15dp"
         android:paddingTop="7dp"
+        android:inputType="text"
         android:textColor="@color/colorPrimary"
         android:textColorHint="@color/colorPrimary"
         android:layout_below="@+id/creat"/>
@@ -57,7 +58,8 @@
         android:textColor="@color/colorPrimary"
         android:textColorHint="@color/colorPrimary"
         android:layout_below="@+id/country_id"
-        android:layout_marginTop="24dp"/>
+        android:layout_marginTop="24dp"
+        android:inputType="number"/>
 
     <TextView
         android:layout_width="150dp"
